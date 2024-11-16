@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jordan Lovett</title> 
+    <link rel="icon" type="image/x-icon" href="images/Jordan.jpg">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <script src="index.js"></script>
+</head>
+<body>
+    <div class="main_content">
+        <!-- Header bar -->
+        <header class="header">
+        <div class="title">Jordan Lovett</div>
+        <img src="images/LightToggle.png" id="theme-toggle">
+
+        <!-- Normal links -->
+        <nav>
+            <ul class="nav-links">
+                <button class="about page-button underlined" onclick="loadPage(this)"><li>About Me</li></button>
+                <button class="education page-button" onclick="loadPage(this)"><li>Education</li></button>
+                <button class="portfolio page-button" onclick="loadPage(this)"><li>Portfolio</li></button>
+            </ul>
+        </nav>
+                
+        <!-- Burger button -->
+        <div class="menu-toggle" id="mobile-menu">
+            <div class="menu-toggle"></div>
+            <div class="menu-toggle"></div>
+            <div class="menu-toggle"></div>
+            <!-- Burger button links -->
+            <nav>
+                <ul id="nav-links-dropdown">
+                    <button class="about page-button underlined" onclick="loadPage(this)"><li>About Me</li></button>
+                    <button class="education page-button" onclick="loadPage(this)"><li>Education</li></button>
+                    <button class="portfolio page-button" onclick="loadPage(this)"><li>Portfolio</li></button>
+                </ul>
+            </nav>
+        </div>
+    
+        </header>
+
+        <div class="content">
+            <div id="about_page" class="content_page">
+                <div class="content_header">
+                    <div class="bio"> Software Developer @ Oleeo | MSc Computer Science 
+                        <div id="location"><span class="material-symbols-outlined">location_city</span>Manchester, UK </div>
+                    </div>
+                    <div id="photo-section">
+                        <img  id="photo" src="images/Jordan.jpg">
+                    </div>
+                </div>
+                <div>Hi! I'm Jordan, a software developer driven by the ubiquitous nature of technology in connecting people for learning, innovation and entertainment.</div>
+                <div><br>I currently work at Oleeo, where I develop highly configurable and customizable hiring tools for over 100 clients, both internal and external. My work here is currently very broad, 
+                    with multiple technologies such as Angular and JS for frontend changes to Perl for the backend and APIs. I am also involved in managing data stored in our relational SQL databases using mySQL, 
+                    where I often have to write complex queries to join multiple tables.</div>
+                <div><br></div>
+            </div>
+            <div id="education_page" class="content_page hide_content">
+                <div class="content_header">
+                    <div class="bio"> First Class MSci Computer Science Honors
+                        <div>University of Nottingham</div>
+                    </div>
+                </div>
+                <div id="educationDescription"> 
+                    I graduated from University with a 78% weighted average as well as being awarded an <a href="images/UGHighAward.pdf" target="_blank">Undergraduate Award</a> during my 
+                    2nd Year. Throughout my studies, I also volunteered to tutor younger students who were stuggling with their modules, and many of my projects being requested
+                    by module conveeners to be an example of exceptional work for future years.
+                
+                </div>
+                <table class="transcript">
+                    <div class="highlight" style="text-align: center;">4<sup>th</sup> Year</div>
+                    <thead>
+                        <tr class="gridHead">
+                            <th scope="col">Module Title</th>
+                            <th scope="col">Credits</th>
+                            <th scope="col">Mark</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="gridAltRow">
+                            <td>Autonomous Robotic Systems</td>
+                            <td>20</td>
+                            <td> 93 </td>
+                        </tr>
+                        <tr class="gridRow">
+                            <td>Linear &amp; Discrete Optimization</td>
+                            <td>20</td>
+                            <td> 86 </td>
+                        </tr>
+                        <tr class="gridAltRow">
+                            <td>MSci Individual Research Project</td>
+                            <td>40</td>
+                            <td> 82 </td>
+                        </tr>
+                        <tr class="gridRow">
+                            <td>Malware Analysis</td>
+                            <td>10</td>
+                            <td> 73 </td>
+                        </tr>
+                        <tr class="gridAltRow">
+                            <td>Cryptography</td>
+                            <td>10</td>
+                            <td> 72 </td>
+                        </tr>
+                        <tr class="gridRow">
+                            <td>Mixed Reality</td>
+                            <td>20</td>
+                            <td> 66 </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table class="transcript">
+                    <div class="highlight" style="text-align: center; margin-top: 30px;">3<sup>rd</sup> Year</div>
+                    <thead>
+                        <tr class="gridHead">
+                            <th scope="col">Module Title</th>
+                            <th scope="col">Credits</th>
+                            <th scope="col">Mark</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="gridAltRow">
+                            <td>Computability</td>
+                            <td>10</td>
+                            <td> 88 </td>
+                        </tr>
+                        <tr class="gridRow">
+                            <td>Games</td>
+                            <td>20</td>
+                            <td> 83 </td>
+                        </tr>
+                        <tr class="gridAltRow">
+                            <td>Computer Security</td>
+                            <td>10</td>
+                            <td> 75 </td>
+                        </tr>
+                        <tr class="gridRow">
+                            <td>Software Quality Assurance</td>
+                            <td>10</td>
+                            <td> 75 </td>
+                        </tr>
+                        <tr class="gridAltRow">
+                            <td>Human-AI Interaction</td>
+                            <td>20</td>
+                            <td> 73 </td>
+                        </tr>
+                        <tr class="gridRow">
+                            <td>Mobile Device Programming</td>
+                            <td>20</td>
+                            <td> 71 </td>
+                        </tr>
+                        <tr class="gridAltRow">
+                            <td>Designing Inteligent Agents</td>
+                            <td>20</td>
+                            <td> 64 </td>
+                        </tr>
+                        <tr class="gridRow">
+                            <td>Professional Ethics in Computing</td>
+                            <td>10</td>
+                            <td> 54 </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table class="transcript">
+                    <div class="highlight" style="text-align: center; margin-top: 30px;">2<sup>nd</sup> Year</div>
+                    <thead>
+                        <tr class="gridHead">
+                            <th scope="col">Module Title</th>
+                            <th scope="col">Credits</th>
+                            <th scope="col">Mark</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="gridAltRow">
+                            <td>Languages and Computation</td>
+                            <td>10</td>
+                            <td> 95 </td>
+                        </tr>
+                        <tr class="gridRow">
+                            <td>Algorithms Correctness &amp; Efficiency</td>
+                            <td>20</td>
+                            <td> 93 </td>
+                        </tr>
+                        <tr class="gridAltRow">
+                            <td>Software Engineering Group Project</td>
+                            <td>20</td>
+                            <td> 89 </td>
+                        </tr>
+                        <tr class="gridRow">
+                            <td>Developing Maintainable Software</td>
+                            <td>20</td>
+                            <td> 87 </td>
+                        </tr>
+                        <tr class="gridAltRow">
+                            <td>Operating Systems &amp; Concurrency</td>
+                            <td>20</td>
+                            <td> 84 </td>
+                        </tr>
+                        <tr class="gridRow">
+                            <td>C++ Programming</td>
+                            <td>10</td>
+                            <td> 79 </td>
+                        </tr>
+                        <tr class="gridAltRow">
+                            <td>Introduction to Image Processing</td>
+                            <td>10</td>
+                            <td> 79 </td>
+                        </tr>
+                        <tr class="gridRow">
+                            <td>Human Computer Interaction</td>
+                            <td>10</td>
+                            <td> 72 </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table class="transcript">
+                    <div class="highlight" style="text-align: center; margin-top: 30px;">1<sup>st</sup> Year</div>
+                    <thead>
+                        <tr class="gridHead">
+                            <th scope="col">Module Title</th>
+                            <th scope="col">Credits</th>
+                            <th scope="col">Mark</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="gridAltRow">
+                            <td>Computer Fundamentals</td>
+                            <td>10</td>
+                            <td> 95 </td>
+                        </tr>
+                        <tr class="gridRow">
+                            <td>Systems &amp; Architecture</td>
+                            <td>20</td>
+                            <td> 93 </td>
+                        </tr>
+                        <tr class="gridAltRow">
+                            <td>Programming &amp; Algorithms</td>
+                            <td>20</td>
+                            <td> 90 </td>
+                        </tr>
+                        <tr class="gridRow">
+                            <td>Databases &amp; Interfaces</td>
+                            <td>10</td>
+                            <td> 88 </td>
+                        </tr>
+                        <tr class="gridAltRow">
+                            <td>Fundamentals of AI</td>
+                            <td>10</td>
+                            <td> 85 </td>
+                        </tr>
+                        <tr class="gridRow">
+                            <td>Fundamentals of Software Engineering</td>
+                            <td>10</td>
+                            <td> 85 </td>
+                        </tr>
+                        <tr class="gridAltRow">
+                            <td>Math 1</td>
+                            <td>10</td>
+                            <td> 76 </td>
+                        </tr>
+                        <tr class="gridRow">
+                            <td>Programming Paradigms</td>
+                            <td>20</td>
+                            <td> 72 </td>
+                        </tr>
+                        <tr class="gridAltRow">
+                            <td>Math 2</td>
+                            <td>10</td>
+                            <td> 70 </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div id="educationFootnote"> For further information on any of the modules mentioned above, please find descriptions 
+                    <a href="https://uoncourses.org/?school=Computer+Science" target="_blank">here</a></div>
+                </div>
+            <div id="portfolio_page" class="content_page hide_content">
+                <section id="popup" class="project-list-expanded">
+                    <div id="popup-boundary">
+                        <div class="popup_header">
+                            <h2 id="popup_heading"></h2>
+                        </div>
+                        <div class="content_container">
+                            <div class="image_container">
+                                <img id="popup_image" src="" onclick="window.open(this.src, '_blank');">
+                            </div>
+                            <svg width="1" height="100%">
+                                <line x1="0" y1="20%" x2="1" y2="80%" style="stroke:lightgray;stroke-width:1" />
+                            </svg>
+                            <div class="text_container">
+                                <p id="popup_text"></p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="project-list">
+                    <ul>
+                      <li id="diss" onclick="openModal(this)">
+                        <h2 id="diss_header">Evaluating visual feedback techniques and object behaviours in VR</h2>
+                        <div class="sides">
+                            <img id="diss_image" src="images/VRStudyMain.png" alt="VR Study Screenshot">
+                            <p id="diss_text">My final year university project: designing and creating a VR experience where the user performs a number of cooking tasks. During the tasks, the relationships between the physical and virtual worlds are manipulated to explore how visual behaviours impact the proprioception and immersion of users.</p>
+                            <p id="diss_text_hidden" class="hide_content"><br><br> This project was created in Unity with a Meta Quest 2 and involved extensive research on VR object manipulation and immersion in games and virtual reality. I really enjoyed working on this project, and it taught me some invaluable insights on how users interact with unfamiliar technology and how that effects the value they get from it.<br><br><a href="pdf/VRStudy.pdf">Read the paper!</a></p>
+                        </div>
+                      </li>
+                      <li id="robot" onclick="openModal(this)">
+                        <h2 id="robot_header">Autonomous Turtlebot</h2>
+                        <div class="sides">
+                            <img id="robot_image" src="images/Robotics.png" alt="Robotics localisation">
+                            <p id="robot_text">A ROS application to autonomously control a turtlebot. This software performs all tasks from mapping and localisation with SLAM to computer vision for object detection and marking. A pathfinding algorithm using frontiers was also used to traverse unseen locations whilst avoiding objects to run in any environment.</p>
+                            <p id="robot_text_hidden" class="hide_content"><br><br> This project is built using python nodes to asynchronously handle the multiple data sources and decision making for a smooth and continuous progression. The nodes are also created to give a combination of performance and accurancy so it can adapt quickly to moving objects in the environment and advance quickly whilst still accurately mapping and identifying the objects it's looking for.<br><br><a href="pdf/RoboticsReport.pdf">Technical report of this project</a></p>  
+                        </div>
+                      </li>
+                      <li id="optimisation" onclick="openModal(this)">
+                        <h2 id="optimisation_header">Car Rental Optimisation</h2>
+                        <div class="sides">
+                            <img id="optimisation_image" src="images/CarOperationsResearch.png" alt="Car rental operations research visualistaion">
+                            <p id="optimisation_text">An algebraic linear optimisation model for maximising the profit of a car rental company with multiple locations and hundred of decision variables and constraints. This required processing of written information and translating it into mathematical model while still retaining the readibility of the model for comprehension by non-technical stakeholders.</p>
+                            <p id="optimisation_text_hidden" class="hide_content"><br><br>This model was developed based on the Car Rental 1 & 2 problems from H. Paul Williams' <a href="https://www.wiley.com/en-ca/Model+Building+in+Mathematical+Programming%2C+5th+Edition-p-9781118506172">Model Buiding in Mathematical Programming</a>.</p>
+                        </div>  
+                      </li>
+                      <li id="grp" onclick="openModal(this)">
+                        <h2 id="grp_header">CatchMeUp - An online meeting summarizer</h2>
+                        <div class="sides">
+                            <img id="grp_image" src="images/GroupProject.png" alt="Architectural diagram of the hosting and data storage">
+                            <p id="grp_text">As part of a university group project, I was responsible for the devops for a meeting sumarization web application. For this I learnt AWS and developed the full cloud architecture to host, store and process all the data passed into the webapp and make the meeting notes available through a secure account system.</p>
+                            <p id="grp_text_hidden" class="hide_content"><br><br>Please click on the image to see the architecture diagram for the final product and a short list of some technologies used. Not included in the diagram is the API gateway for REST APIs, secured with a cognito account system and authentication as well as cloudfront hosting.</p>  
+                        </div>
+                      </li>
+                      <li id="predprey" onclick="openModal(this)">
+                        <h2 id="predprey_header">Predator Prey Simulation</h2>
+                        <div class="sides">
+                            <img id="predprey_image" src="images/PredatorPrey.png" alt="">
+                            <p id="predprey_text">A simulation project to model the population fluctuation of predator and prey. This model was developed in python, making use of the tkinter library to model the movement of the creatures. For this I developed a number of different AI agents with varing communication strategies to explore the impact on the emergent behaviours.</p>
+                            <p id="predprey_text_hidden" class="hide_content"><br><br>A state machine architecture was developed for each individual agent, with predators and agents each having specific movement and vision characteristics to make them as accurate as models to real life creatures as possible. I was able to then plot the findings of the different communication strategies on the emergent behaviours using Pandas to reason about their success as a model for the relationship.<br><br><a href="">Check it out!</a></p>
+                        </div>
+                      </li>
+                      <li id="website" onclick="openModal(this)">
+                        <h2 id="website_header">Portfolio Website (Where you are right now!)</h2>
+                        <div class="sides">
+                            <img id="website_image" src="images/Webpage.png" alt="">
+                            <p id="website_text">This website was created as a very simple portfolio just to give more insight than a CV or job application on the sorts of things I get up to and the fun side projects I do. Created fully with simple HTML, CSS and Javascript without any frameworks.</p>
+                            <p id="website_text_hidden" class="hide_content"><br><br></p>
+                        </div>
+                      </li>
+                      </ul>
+                  </section>
+            </div>
+        </div>
+        <footer>
+            <div class="footer-links">
+                <a href="https://www.linkedin.com/in/jordan-e-lovett/" target="_blank"> LinkedIn</a>
+                <a href="pdf/JordanLovett_CV.pdf" target="_blank"> Resume </a>
+                <a href="mailto: jordanlovett123@gmail.com" target="_blank"> Email </a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

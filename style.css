@@ -1,0 +1,452 @@
+:root {
+    --background_color: #fdfae9;
+    --text_color: black;
+    --main_text_color: #747474;
+    --soft_highlight: #dc5800;
+    --hard_highlight: #dc5800;
+    --image_colour: #dc5800;
+    --grid_alt_color: #fdf6d8;
+}
+
+.dark-mode {
+    --background_color: #1d1d1d;
+    --text_color: white;
+    --main_text_color: #cdcdcd;
+    --soft_highlight: #e0c090;
+    --hard_highlight: #ff6600;
+    --image_colour: #0099ff;
+    --grid_alt_color: #242424;
+
+    #theme-toggle{
+        -webkit-filter: invert(100%);
+        filter: invert(100%);
+    }
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    justify-content: center;
+    background-color: var(--background_color);
+    color: var(--text_color);
+    font-family: "ui-monospace", "Consolas";
+}
+
+button {
+    text-decoration: none;
+    font-family: "ui-monospace", "Consolas";
+    color: inherit; 
+    background:none;
+    border:none;
+    margin:0;
+    padding:0;
+    cursor: pointer;
+    text-align: center;
+}
+
+
+/*
+###########################################
+                HEADER 
+###########################################
+*/
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 45px 30px 15px 0px;
+    position: relative;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.nav-links li {
+    margin: 0px 10px;
+}
+
+.nav-links button {
+    font-size: 16px;
+    transition: color 0.3s ease, text-decoration 0.3s ease-in-out;
+}
+
+.nav-links button:hover {
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    padding-bottom: 5px;
+    color: var(--hard_highlight);
+}
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.menu-toggle div {
+    width: 25px;
+    height: 3px;
+    background-color: var(--text_color);
+    margin: 4px;
+    transition: 0.3s;
+}
+
+#mobile-menu:hover .menu-toggle{
+    background-color: var(--hard_highlight);
+}
+
+.underlined{
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    color: var(--soft_highlight);
+}
+
+#nav-links-dropdown.active {
+    display: flex;
+}
+
+#theme-toggle{
+    max-width: 3%;
+    box-sizing: border-box;
+    transition: 0.3s ease;
+    margin-right: 20px;
+    margin-left: auto;
+}
+
+#theme-toggle:hover{
+    cursor: pointer;
+    transform: translateY(-2px);
+    box-shadow: 0px 2px 0px var(--image_colour);
+    background-color: var(--image_hover);
+}
+/*
+###########################################
+                CONTENT 
+###########################################
+*/
+.content {
+    flex: 1;
+    padding: 5px;
+}
+
+.hide_content{
+    display: none;
+}
+
+.content_page{
+    color: var(--main_text_color);
+}
+
+.highlight{
+    color: var(--soft_highlight);
+}
+
+/*
+###########################################
+                ABOUT ME 
+###########################################
+*/
+.bio{
+    padding-top: 5px;
+    color: var(--soft_highlight);
+}
+
+#location{
+    display: flex;
+    align-items: center;
+    color: var(--soft_highlight);
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.material-symbols-outlined {
+    margin-right: 5px;
+}
+
+.content_header{
+    display: flex;
+    justify-content: space-between;
+}
+
+#photo{
+    width: 100px;
+    height: 100px;
+    margin-right: 40px;
+}
+
+/*
+###########################################
+                Education 
+###########################################
+*/
+
+.transcript{
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.gridAltRow{
+    background-color: var(--grid_alt_color);
+}
+
+thead{
+    border-bottom: 2px solid var(--main_text_color);
+}
+
+#educationDescription{
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+#educationFootnote{
+    margin-top: 5%;
+}
+
+/*
+###########################################
+                Porfolio 
+###########################################
+*/
+
+.project-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.project-list ul{
+    padding: 0;
+}
+
+.project-list li {
+    margin-bottom: 20px;
+    border: 2px solid var(--main_text_color); 
+    border-radius: 5px;
+    padding: 10px;
+    list-style: none;
+    height: fit-content;
+    overflow: hidden;
+}
+
+.project-list li:hover {
+    border-color: var(--hard_highlight);
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.6);
+}
+
+.project-list li h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.project-list li img {
+    object-fit: contain;
+    float: left;
+    width: 100px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.project-list li p {
+    margin: 0;
+}
+.sides{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.project-list-expanded{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+#popup-boundary{
+    background-color: var(--background_color);
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    position: relative;
+    margin: auto;
+    width: 45%;
+    height: 50%;
+    min-width: 680px;
+    min-height: 430px;
+    aspect-ratio: 1.6/1;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+    animation: fadeIn 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+}
+
+#popup-boundary .popup_header{
+    text-align: center;
+}
+
+.content_container {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+}
+  
+.image_container {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    width: 45%;
+    height: auto;
+    max-width:300px;
+    overflow: hidden;
+    padding: auto;
+    margin-right: 30px;
+}
+
+.image_container img {
+    width: 100%;
+    height: auto;
+    cursor: zoom-in;
+}
+
+.text_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+    width: 65%;
+}
+
+.text_container p {
+    margin: 0;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/*
+###########################################
+                FOOTER 
+###########################################
+*/
+footer {
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+}
+
+.footer-links {
+    margin: 10px 0;
+}
+
+.footer-links a {
+    color: var(--text_color);
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: var(--hard_highlight);
+}
+
+
+/*
+###########################################
+                SCREEN SCALING 
+###########################################
+*/
+
+/* Mobiles */
+@media only screen and (max-width: 680px){
+    .main_content {
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    .nav-links{
+        display: none;
+    }
+    
+    #nav-links-dropdown {
+        display: none; 
+        position: absolute;
+        right: 0;
+        background-color: var(--background_color);
+        flex-direction: column;
+        align-items: center;
+        padding: 5px;
+    }
+
+    #nav-links-dropdown li {
+        list-style-type: none;
+        margin: 10px;
+        align-items: center;
+    }
+    #nav-links-dropdown button {
+        text-decoration: none;
+        font-size: 16px;
+        transition: color 0.3s ease;
+    }
+    #nav-links-dropdown button:hover {
+        color: var(--hard_highlight);
+    }
+
+    .project-list li {
+        flex-direction: column;
+    }
+
+    #popup-boundary{
+        width:95%;
+    }
+}
+
+
+/* Desktops */
+@media only screen and (min-width: 680px) {
+    .main_content {
+        margin: auto;
+        width: 40%;
+        min-width: 680px;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+}
+  

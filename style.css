@@ -258,6 +258,9 @@ thead{
     width: 100px;
     height: auto;
     margin-right: 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.6);
 }
 
 .project-list li p {

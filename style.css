@@ -1,11 +1,12 @@
 :root {
-    --background_color: #fdfae9;
+    --background_color: #fdf7d5;
     --text_color: black;
     --main_text_color: #747474;
     --soft_highlight: #dc5800;
     --hard_highlight: #dc5800;
     --image_colour: #dc5800;
-    --grid_alt_color: #fdf6d8;
+    --grid_alt_color: #fff4b3;
+    --seperator: #c8bf8f;
 }
 
 .dark-mode {
@@ -16,6 +17,7 @@
     --hard_highlight: #ff6600;
     --image_colour: #0099ff;
     --grid_alt_color: #242424;
+    --seperator: #4b4834;
 
     #theme-toggle{
         -webkit-filter: invert(100%);
@@ -153,6 +155,14 @@ button {
     color: var(--soft_highlight);
 }
 
+hr{
+    border: solid;
+    border-width: 0.5px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 30px;
+    color: var(--seperator);
+}
 /*
 ###########################################
                 ABOUT ME 

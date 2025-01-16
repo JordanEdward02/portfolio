@@ -16,6 +16,13 @@ window.onload = function () {
         }
     };
 
+    document.addEventListener("keydown", function(event) {
+        const key = event.key;
+        if (key === "Escape") {
+            closeModal();
+        }
+    });
+
     const toggleButton = document.getElementById('theme-toggle');
     const body = document.body;
     const currentTheme = localStorage.getItem('theme');

@@ -1,11 +1,11 @@
 :root {
-    --background_color: #fdf7d5;
+    --background_color: #fdfae9;
     --text_color: black;
     --main_text_color: #747474;
     --soft_highlight: #dc5800;
     --hard_highlight: #dc5800;
     --image_colour: #dc5800;
-    --grid_alt_color: #fff4b3;
+    --grid_alt_color: #fdf6d8;
     --seperator: #c8bf8f;
 }
 
